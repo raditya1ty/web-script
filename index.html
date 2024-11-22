@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kursor Bulat</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* CSS untuk membuat kursor bulat */
+    body {
+      cursor: none; /* Menyembunyikan kursor default */
+    }
+
+    /* Kursor bulat kustom */
+    .custom-cursor {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      background-color: rgb(92, 5, 255);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 1000;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+<script src="script.js"></script>
+    <div class="custom-cursor" id="cursor"></div>
+
+  <script>
+    // JavaScript untuk menggerakkan kursor kustom
+    const cursor = document.getElementById('cursor');
+
+    document.addEventListener('mousemove', (event) => {
+      cursor.style.left = event.pageX + 'px';
+      cursor.style.top = event.pageY + 'px';
+    });
+  </script>
+
+
+    <!-- Tombol untuk membuka menu -->
+    <button class="menu-toggle" onclick="toggleMenu()">Menu
+        <i class="fas fa-bars"></i>
+        <div style="display: flex; justify-content: flex-end;">
+            <nav class="menu">
+    </button>
+
+    <!-- Menu Sidebar -->
+    <div id="menu" class="menu">
+        <div class="menu-content">
+            <button class="close-btn" onclick="toggleMenu()">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <h1>Lagu viral OLD</h1>
+                <div class="audio-container">
+                
+                  <audio id="audio" src="Damon Empero ft Veronica   Vacation  Tropical House .mp3" preload="auto"></audio>
+                  <div class="buttons">
+                      <button id="playButton">Play</button>
+                      <button id="pauseButton" disabled>Pause</button>
+                  </div>
+                  <div class="audio-list">
+                    <a href="dashboard.html"><button>Lagu OLD</button></a>
+                  
+                    
+                </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+   
+    <!-- Konten utama -->
+    <div class="main-content">
+
+</body>
+<body 1>
+    <h1>SELAMAT DATANG DI WEB SCRIPT ZTO</h1>
+    <h3>___SCRIPT FISH___</h3>
+    <h3>Premium</h3>
+    <p>SCRIPT: loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+      <h3>ini pake pw</h3>
+    </p>
+  
+    <h3>___SCRIPT FISH FREE___</h3>
+  <h3>no password</h3>
+    <p>loadstring(game:HttpGet("https://raw.githubusercontent.com/kylosilly/femboyware/refs/heads/main/Fisch.lua"))()</p>
+</body>
+<body 2>
+    
+</body 2>
+</html>
+<script>
+  // Ambil elemen-elemen dari DOM
+  const audio = document.getElementById('audio');
+  const playButton = document.getElementById('playButton');
+  const pauseButton = document.getElementById('pauseButton');
+
+  // Fungsi untuk memulai audio
+  function playAudio() {
+      audio.play().then(() => {
+          playButton.disabled = true;  // Disable tombol Play setelah audio mulai diputar
+          pauseButton.disabled = false; // Enable tombol Pause setelah audio mulai diputar
+      }).catch((error) => {
+          console.error("Error memutar audio:", error);
+      });
+  }
+
+  // Fungsi untuk menjeda audio
+  function pauseAudio() {
+      audio.pause();
+      playButton.disabled = false; // Enable tombol Play setelah audio dijeda
+      pauseButton.disabled = true; // Disable tombol Pause setelah audio dijeda
+  }
+
+  // Event listeners untuk tombol Play dan Pause
+  playButton.addEventListener('click', playAudio);
+  pauseButton.addEventListener('click', pauseAudio);
+
+
+
+        const audioPlayer = document.getElementById('audioPlayer');
+        const playPauseButton = document.getElementById('playPauseButton');
+        const trackSelect = document.getElementById('trackSelect');
+
+        // Fungsi untuk memutar atau menjeda musik
+        playPauseButton.addEventListener('click', () => {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playPauseButton.textContent = 'Pause';
+            } else {
+                audioPlayer.pause();
+                playPauseButton.textContent = 'Play';
+            }
+        });
+
+        // Fungsi untuk mengganti lagu saat pilihan berubah
+        trackSelect.addEventListener('change', (event) => {
+            audioPlayer.src = event.target.value;
+            audioPlayer.play();
+            playPauseButton.textContent = 'Pause';
+        });
+    </script>
+    
+
+  
+</script>
