@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kursor Bulat</title>
+  <title>audio</title>
   <link rel="stylesheet" href="styles.css">
   <style>
     /* CSS untuk membuat kursor bulat */
@@ -53,11 +53,11 @@
                 <i class="fas fa-times"></i>
             </button>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            
+                <li><a href="#"></a></li>
+                <li><a href="https://raditya1ty.github.io/web-script/">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="https://chat.whatsapp.com/L3k1McEqBxDFDnhFcKB5P9">Contact</a></li>
+                <li><a href=""></a></li>
             </ul>
         </div>
     </div>
@@ -78,7 +78,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemutar Audio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -112,11 +111,15 @@
             width: 80%;
             max-width: 600px;
         }
+        button{
+            color: aqua;
+            background-color: black;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Pemutar Audio</h1>
+    
 
     <!-- Input untuk memilih file audio -->
     <input type="file" id="audio-file" accept="audio/*">
@@ -125,7 +128,7 @@
         <!-- Audio player yang akan menampilkan file yang dipilih -->
         <audio id="audio-player" controls>
             <source id="audio-source" src="" type="audio/mp3">
-            Browser Anda tidak mendukung elemen audio.
+            
         </audio>
     </div>
 
@@ -141,7 +144,7 @@
         <!-- Audio player yang akan menampilkan file yang dipilih -->
         <audio id="audio-player" controls>
             <source id="audio-source" src="" type="audio/mp3">
-            Browser Anda tidak mendukung elemen audio.
+
         </audio>
     </div>
 
@@ -149,6 +152,11 @@
         <button id="play-pause-button" disabled>Play</button>
      
     </div>
+    <video width="640" height="360" controls autoplay>
+        <source src="Damon Empero ft. Veronica -  Vacation ｜ Tropical House ｜.mp3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
 <script src="audio.js"></script>
 </body>
 </html>

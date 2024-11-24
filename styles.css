@@ -140,7 +140,7 @@ audio {
     
     top: 20px;
     left: 400px;
-    background-color: #4bb982;
+    background-color: #2b15f13a;
     color: white;
     border: none;
     font-size: 24px;
@@ -291,7 +291,7 @@ button{
 }
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+    background-image: url(wallpapersden.com_blue-background-geometric-abstract_1920x1080.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -375,3 +375,6 @@ body {
   audio {
     margin-top: 20px;
   }
+p{
+    color: #f1f1f1;
+}
